@@ -173,7 +173,7 @@ class Comments:
             yield dict(zip(fields_comments + fields_threads, item))
 
     def fetch(self, uri, mode=5, after=0, parent='any',
-              order_by='id', asc=1, limit=None):
+              order_by='id', asc=0, limit=None):
         """
         Return comments for :param:`uri` with :param:`mode`.
         """
